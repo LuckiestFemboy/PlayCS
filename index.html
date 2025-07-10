@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Counter-Strike</title>
+        <link rel="icon" href="media/cstrike.ico">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="menu-options" id="menu_options">
+            <button class="menu-button" id="find_servers_button">Find Servers</button>
+            <a href="https://discord.gg/NKYUZE9WPS" target="_blank" class="menu-button" onclick="open_audio()">Discord</a>
+            <button class="menu-button" id="options_menu_button">Options</button>
+            <button class="menu-button" id="quit_game">Quit</button>
+            <img src="media/cstrike-text.png" draggable="false" class="cstrike-text">
+        </div>
+
+        <div class="options_window window" id="quit_window">
+            Quit Game
+
+            <div class="optins_window_content">
+                Do you wish to stop playing now?
+
+                <div class="option_window_options">
+                    <button class="filter_button" id="close_game">Quit game</button>
+                    <button class="filter_button" id="cancel_quit">Cancel</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="options_window window draggable_window" id="not_avaible_window">
+            Warning
+            
+        
+            <div class="optins_window_content">
+                This feature is not avaible on this version of the game!
+        
+                <div class="option_window_options">
+                    <button class="close_button filter_button close_button_text" onclick="close_window_x()">Close</button>
+                </div>
+            </div>
+        </div>
+        
+
+        <div class="servers_window window draggable_window" id="servers_window">
+            <div class="window_options">
+                Servers<button class="filter_button close_button" id="close_window_button">x</button>
+            </div>
+            <div class="inner_window inner_server" id="server_list">
+                <input type="text" class="filter_button" id="search_box">
+                <div class="inner_space"></div>
+                <a href="https://play-cs.com/play/27029/de" target="_blank" class="server_item">de_dust <span class="server_country">europe</span></a>
+                <a href="https://play-cs.com/play/27063/sg" target="_blank" class="server_item">de_dust2 <span class="server_country">asia</span></a>
+                <a href="https://play-cs.com/play/27015/ru" target="_blank" class="server_item">de_dust2 <span class="server_country">russia</span></a>
+                <a href="https://play-cs.com/play/27045/br" target="_blank" class="server_item">de_dust2 <span class="server_country">south america</span></a>
+                <a href="https://play-cs.com/play/27065/ny" target="_blank" class="server_item">de_dust2 <span class="server_country">united states</span></a>
+                <a href="https://play-cs.com/play/27090/de" target="_blank" class="server_item">de_inferno <span class="server_country">europe</span></a>
+                <a href="https://play-cs.com/play/27030/de" target="_blank" class="server_item">de_nuke <span class="server_country">europe</span></a>
+                <a href="https://play-cs.com/play/27056/sg" target="_blank" class="server_item">cs_italy <span class="server_country">asia</span></a>
+                <a href="https://play-cs.com/play/27083/ny" target="_blank" class="server_item">cs_italy <span class="server_country">united states</span></a>
+                <a href="https://play-cs.com/play/27001/de" target="_blank" class="server_item">cs_italy <span class="server_country">europe</span></a>
+                <a href="https://play-cs.com/play/27002/ru" target="_blank" class="server_item">gg_new_pool_day2 <span class="server_country">russia</span></a>
+                <a href="https://play-cs.com/play/27046/ru" target="_blank" class="server_item">gg_new_pool_day2 - 2 <span class="server_country">russia</span></a>
+
+                
+            </div>
+        </div>
+
+
+
+        <div class="console_window window draggable_window" id="console_window">
+            <div class="window_options">
+                Console<button class="filter_button close_button" onclick="close_window_x()">x</button>
+            </div>
+            <div class="inner_window">
+                <input type="text" class="filter_button" id="command_box">
+
+                <div class="command_options">
+                    <button class="filter_button" id="run_command">Run Command</button>
+                    <button class="filter_button" id="clear_command">Clear</button>
+                </div>
+                
+            </div>
+        </div>
+
+
+        
+        <script src="script.js"></script>
+
+    </body>
+</html>

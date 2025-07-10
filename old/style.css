@@ -1,0 +1,31 @@
+html, body {
+    height: 100vh;
+
+    overflow: hidden;
+}
+
+body {
+    background-color: #4c5844;
+    overflow: hidden;
+    border: 1px solid #848d7c; /* Simplified borders */
+    height: 90vh;
+    border-right-color: #282e22;
+    border-bottom-color: #282e22;
+}
+
+.window {
+    position: relative;
+    width: 100%;
+    height: 90vh;
+    background-color: #3e4637;
+}
+
+.window-options {
+    background-color: #4c5844;
+    width: 100%;
+    height: 65px;
+    border-top: #889180 solid 1px;
+    position: absolute;
+    bottom: 0;
+
+}

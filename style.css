@@ -1,0 +1,236 @@
+@font-face {
+    font-family: "menu";
+    src: url("media/menu-font.ttf");
+}
+
+@font-face {
+    font-family: "pixel";
+    src: url("media/window-pixel.ttf");
+}
+
+body {
+    margin: 0;
+    background-image: url("media/background.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    overflow: hidden;
+}
+
+* {
+    user-select: none;
+    font-family: "menu";
+    color: white;
+    -webkit-user-drag: none; /* For WebKit browsers like Chrome, Safari */
+    user-drag: none; /* Standard syntax */
+    outline: none;
+    cursor: default;
+    
+    
+}
+
+::selection {
+    background-color: #988c34;
+}
+
+a {
+    text-decoration: none;
+}
+
+input {
+    outline: none;
+}
+
+.menu-options {
+    position: absolute;
+    bottom: 0;
+    transform: translateY(-20px) translateX(165px);
+    display: flex;
+    justify-content: left;
+    flex-direction: column;
+}
+
+.cstrike-text {
+
+}
+
+.command_options {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 10px;
+}
+
+.server_item {
+    padding-left: 20px;
+    width: calc(100% - 40px);
+    padding-right: 20px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+.server_item:active {
+
+}
+
+.server_item:hover {
+    background-color: #988c34;
+    cursor: auto;
+}
+
+.server_country {
+    color: red;
+}
+
+.menu-button {
+    text-align: left;
+    color: #eeae00;
+    background-color: transparent;
+    border: transparent solid 0px;
+    font-size: 32px;
+    font-weight: bolder;
+    padding-top: 5px;
+    padding-bottom: 27px;
+    text-shadow: 
+        -1px -1px 0 #030404,  
+         1px -1px 0 #030404,
+        -1px  1px 0 #030404,
+         1px  1px 0 #030404;
+    transition: all 0.4s ease-out;
+}
+
+.menu-button:hover {
+    color: #ffff1b;
+    text-shadow: 
+        0 0 10px #c3a56b,
+        0 0 20px #c3a56b,
+        0 0 40px #c3a56b,
+        0 0 80px #c3a56b,
+        0 0 120px #c3a56b;
+    transition: all 0.09s ease-in;
+}
+
+.window {
+    position: absolute;
+    min-width: 350px;
+    min-height: 150px;
+    border: #7c8674 solid 2px;
+    border-bottom: #353d2e solid 2px;
+    border-right: #353d2e solid 2px;
+    background-color: #4c5844;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 14px;
+    font-size: 16.5px;
+    font-weight: 400;
+    image-rendering: pixelated;
+    image-rendering: crisp-edges;
+    visibility: hidden;
+}
+
+.window_options {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    pointer-events: none;
+    top: 0;
+}
+
+.window_options button,
+.window_options input,
+.window_options a {
+    pointer-events: auto; /* Re-enable pointer events for interactive children */
+}
+
+.inner_window {
+    border: #374030 solid 2px;
+    border-bottom: #677060 solid 2px;
+    border-right: #677060 solid 2px;
+    width: 100%;
+    height: 90%;
+    margin-top: 8px;
+    background-color: #3e4637;
+}
+
+.quit_window {
+
+}
+
+.option_window_options {
+
+}
+
+
+
+.optins_window_content {
+    width: 100%;
+    margin-top: 20px;
+    text-align: center;
+    color: #d8ded3;
+}
+
+.option_window_options {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-evenly;
+    margin-top: 20px;
+
+}
+
+.filter_button {
+    padding: 4px;
+    background-color: #4c5844;
+    color: white;
+    border: #889180 solid 1.5px;
+    border-bottom: #282e22 solid 1.5px;
+    border-left: #282e22 solid 1.5px;
+}
+
+.close_button_text {
+    width: fit-content !important;
+}
+
+.filter_button:active {
+    outline: #000000 solid 1px;
+    text-decoration-line: underline;
+    text-decoration-style: dotted;
+    text-decoration-color: black;
+}
+
+.close_button {
+    font-size: 16.5px;
+    height: 25px;
+    width: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.servers_window {
+    width: 600px;
+    height: 400px;
+}
+
+.inner_server {
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+.inner_space {
+    margin-bottom: 25px;
+    width: 100%;
+}
+
+#search_box {
+    width: calc(100% - 15px);
+    position: sticky;
+}
+
+#command_box {
+    width: calc(100% - 12px);
+    position: sticky;
+}
