@@ -6,5 +6,5 @@ just for more fun and to be more original
 to the actual counter-strike menus you can fork
 this repo if you want just please give credits to Lucky?🥞
 
-#CS 1.6 Menu
+# CS 1.6 Menu
 ![CS 1.6 Menu](GithubScreenshots/screenshot.png)
