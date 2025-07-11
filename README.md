@@ -5,3 +5,5 @@ matches are hosted on play-cs.com this is kinda
 just for more fun and to be more original
 to the actual counter-strike menus you can fork
 this repo if you want just please give credits to Lucky?🥞
+
+![Alt Text](GithubScreenshots/screenshot1.png)
