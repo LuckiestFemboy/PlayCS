@@ -14,4 +14,4 @@ this repo if you want just please give credits to Lucky?🥞
 # CS Source Menu [COMING SOON]
 
 
-the counter-strike source and 1.5 menu css files were lost
+the counter-strike source and 1.5 menu css files were lost and i currently am remaking them
