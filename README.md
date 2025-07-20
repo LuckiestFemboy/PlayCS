@@ -12,3 +12,6 @@ this repo if you want just please give credits to Lucky?🥞
 ![CS 1.6 Menu](GithubScreenshots/screenshot.png)
 
 # CS Source Menu [COMING SOON]
+
+
+the counter-strike source and 1.5 menu css files were lost
